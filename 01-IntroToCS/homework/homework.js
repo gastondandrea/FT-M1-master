@@ -8,7 +8,7 @@ function BinarioADecimal(string) {
    */
  
    var array = string.split("").reverse().map((letra, index)=>{
-     return parseInt(letra)*(2**index);
+     return letra*(2**index);
    });
    var aux = 0;
    var result = array.reduce((suma, elemnet)=>{
