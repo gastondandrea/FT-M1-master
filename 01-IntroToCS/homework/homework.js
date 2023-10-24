@@ -7,19 +7,19 @@ function BinarioADecimal(string) {
    return num;
    */
  
-   var array = string.split("").reverse().map((letra)=>{
-     return parseInt(letra);
+   var array = string.split("").reverse().map((letra, index)=>{
+     return parseInt(letra)*(2**index);
    });
    var aux = 0;
-   var result = array.reduce((suma, elemnet, index)=>{
-       suma += elemnet*(2**index);
+   var result = array.reduce((suma, elemnet)=>{
+       suma += elemnet;
        return suma;
       },0)
    return result;
  }
  
 
-console.log(BinarioADecimal('101'));
+console.log(BinarioADecimal('1010'));
 
 // INPUT num 8 -> OUTPUT '1000'
 function DecimalABinario(num) {
