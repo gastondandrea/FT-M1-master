@@ -6,12 +6,6 @@ function BinarioADecimal(string) {
    var num = parseInt(string, 2);
    return num;
    */
-   /*let decimal = 0;
-   let array = string.split("").reverse()
-   array.forEach(function (element, index) {
-      decimal = decimal + Math.pow(2, index) * element
-   });
-   return decimal;*/
  
    var array = string.split("").reverse().map((letra)=>{
      return parseInt(letra);
