@@ -15,10 +15,9 @@ otroContador()      // 1
 otroContador()      // 2 */
 function counter() {
   let contador = 1;
-  let increment = function(){
-    return contador ++;
-  };
-  return increment;
+  return function(){
+      return contador ++;
+  }
 }
 const intancia1 = counter();
 console.log(intancia1());
